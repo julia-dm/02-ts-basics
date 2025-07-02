@@ -1,15 +1,13 @@
 import css from "./VoteStats.module.css"
-interface VoteStatusProps{
-    votes:{
-        good: number;
-        neutral: number;
-        bad: number;
-      };
+import type { Votes } from "../../types/votes";
+
+interface VoteStatsProps{
+    votes: Votes; 
     totalVotes:number,
     positiveRate:number,
 }
 
-export default function VoteStatus({totalVotes,positiveRate,votes } :VoteStatusProps){
+export default function VoteStatus({totalVotes,positiveRate,votes } :VoteStatsProps){
     const { good, neutral, bad }=votes;
 
     return(
