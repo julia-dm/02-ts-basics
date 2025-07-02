@@ -1,4 +1,4 @@
-import css from "./VoteStatus.module.css"
+import css from "./VoteStats.module.css"
 interface VoteStatusProps{
     votes:{
         good: number;

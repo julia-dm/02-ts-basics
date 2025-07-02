@@ -4,7 +4,7 @@ import { useState } from "react";
 import css from "../App/App.module.css"
 import type { Vote , VoteType} from "../../types/votes";
 import VoteOptions from "../VoteOptions/VoteOptions";
-import VoteStatus from "../VoteStatus/VoteStatus";
+import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification /Notification";
 import CafeInfo from "../CafeInfo/CafeInfo"
 
@@ -46,7 +46,7 @@ import CafeInfo from "../CafeInfo/CafeInfo"
 {totalVotes === 0 ? (
   <Notification />
 ) : (
-  <VoteStatus
+  <VoteStats
     votes={votes}
     totalVotes={totalVotes}
     positiveRate={positiveRate}
